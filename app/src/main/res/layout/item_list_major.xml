@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:background="#4b636e"
+        android:id="@+id/tv_1"
+        android:text="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_width="123dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a7c0cd"
+        android:id="@+id/tv_2"
+        android:text="Toán Tin"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="33sp"
+        android:layout_marginLeft="5dp"/>
+</LinearLayout>

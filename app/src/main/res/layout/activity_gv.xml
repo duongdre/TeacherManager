@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="22dp"
+    tools:context=".ChoosingActivity">
+
+    <EditText
+        android:id="@+id/editText_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" NHẬP TÊN/MÃ GIÁO VIÊN"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_toLeftOf="@+id/ibtn_search">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/ibtn_search"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_search"
+        android:layout_alignParentRight="true">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibtn_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@android:drawable/ic_menu_add"/>
+
+    <LinearLayout
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="65dp"
+        android:layout_width="381dp"
+        android:layout_height="636dp">
+        <ListView
+            android:id="@+id/lv_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="empty list"
+        android:id="@+id/empty"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="50sp"/>-->
+
+</RelativeLayout>

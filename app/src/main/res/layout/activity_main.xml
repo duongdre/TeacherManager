@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoosingActivity"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#e0f2f1">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logotlu"
+        android:layout_marginTop="15dp"
+        ></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e0f2f1"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="10"
+                >
+                <ImageButton
+                    android:id="@+id/btn_teacher"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:text="QUẢN LÍ GIÁO VIÊN"
+                    android:background="#aec4c7"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_teachermanager"
+                    android:layout_marginRight="10dp">
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/btn_major"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:text="QUÁN LÍ MÔN HỌC"
+                    android:background="#aec4c7"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_majormanager"
+                    android:layout_marginLeft="10dp">
+                </ImageButton>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/btn_book"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:text="QUẢN LÍ SÁCH"
+                    android:background="#aec4c7"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_bookmanager"
+                    android:layout_marginRight="10dp">
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/btn_setting"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:text="QUẢN LÍ SÁCH"
+                    android:background="#aec4c7"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_setting"
+                    android:layout_marginLeft="10dp">
+                </ImageButton>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

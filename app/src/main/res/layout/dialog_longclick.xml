@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="#C8C8C8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_header"
+            android:text="SỬA THÔNG TIN"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_acceptDelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_delete"
+            android:background="#FA8282"
+            android:layout_marginLeft="50dp">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_code"
+        android:hint="Mã giáo viên"
+        android:textSize="20sp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_name"
+        android:hint="Họ tên giáo viên"
+        android:textSize="20sp">
+    </EditText>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_gender"
+            android:hint=" Giới tính"
+            android:textSize="20sp"
+            ></TextView>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkbox_nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nam"
+                ></CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkbox_nu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nữ"
+                ></CheckBox>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_major"
+            android:hint=" Bộ môn"
+            android:textColor="#000000"
+            android:textSize="20sp">
+        </TextView>
+        <Button
+            android:id="@+id/btn_major"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text=">"
+            android:textSize="20sp"
+            android:background="#FA8282"
+            android:gravity="center">
+        </Button>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_salary"
+        android:hint="Hệ số lương"
+        android:textSize="20sp">
+    </EditText>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <Button
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cancleUpdate"
+            android:text="Hủy"
+            android:background="#FA8282"
+            android:layout_marginRight="5dp"
+            ></Button>
+        <Button
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_acceptUpdate"
+            android:text="Sửa"
+            android:background="#FA8282"
+            android:layout_marginLeft="5dp"
+            ></Button>
+    </LinearLayout>
+
+</LinearLayout>
